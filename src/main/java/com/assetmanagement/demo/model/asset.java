@@ -9,6 +9,7 @@ import javax.persistence.Id;
 
 @Entity
 public class asset{
+    // class to create the entity asset
 
 	@Id
     @GeneratedValue
@@ -23,6 +24,8 @@ public class asset{
     String category;
     
     String assignmentStatus;
+
+    //initializing getters and setters
     
 
     public String getName() {

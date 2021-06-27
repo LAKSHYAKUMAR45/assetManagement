@@ -10,14 +10,19 @@ import org.springframework.stereotype.Service;
 @Service
 public class categoryService {
 
-    @Autowired
+    @Autowired                                  //Auto-wiring the repository
     categoryRepository categoryRepository;
 
+    //Function to retrieve category by id
+
     public Category getCategoryById(int id) {
+
         return categoryRepository.findById(id).get();
     }
 
+    //Function to update category by id
     public void saveOrUpdate(Category category) {
+
         categoryRepository.save(category);
     }
 }

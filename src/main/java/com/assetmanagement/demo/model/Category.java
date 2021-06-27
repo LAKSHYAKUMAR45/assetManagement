@@ -8,6 +8,7 @@ import javax.persistence.Table;
 
 @Entity
 public class Category {
+    //Class to generate the entity category
 	@Id
     @GeneratedValue
     int id;
@@ -15,6 +16,8 @@ public class Category {
     String name;
    
     String description;
+
+    //Initializing getters and setters for each column in table category
 
     public int getId() {
         return id;

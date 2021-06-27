@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AssetManagementApplication {
 
+	//Main class
+
 	public static void main(String[] args) {
 
 		SpringApplication.run(AssetManagementApplication.class, args);

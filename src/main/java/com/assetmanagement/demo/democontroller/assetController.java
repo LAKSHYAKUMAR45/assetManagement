@@ -13,11 +13,15 @@ import java.util.List;
 @RestController
 public class assetController {
 
-    @Autowired
+    //Rest Controller for the service classes assetService and categoryService
+
+    @Autowired                      // Auto-wiring to the assetService class
     assetService assetService;
     
-    @Autowired
+    @Autowired                      // Auto-wiring to the categoryService class
     categoryService categoryService;
+
+    //Rest operations for asset
 
     @GetMapping("/asset")
     private List<asset> getAllasset()
@@ -45,7 +49,7 @@ public class assetController {
         return asset.getAssignedEmployeeId();
     }
 
-   
+   //Rest operation for categories
 
     @GetMapping("/category/{id}")
     private Category getCategory(@PathVariable("id") int id){
