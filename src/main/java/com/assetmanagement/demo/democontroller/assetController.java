@@ -30,7 +30,7 @@ public class assetController {
         return assetService.getAllAsset();
     }
     @GetMapping("/asset/{id}")
-    private asset getAsset(@PathVariable("id") int name)
+    public asset getAsset(@PathVariable("id") int name)
     {
 
         return assetService.getAssetById(name);
